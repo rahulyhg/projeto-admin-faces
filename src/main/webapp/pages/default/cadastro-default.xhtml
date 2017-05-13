@@ -5,19 +5,22 @@
                 template="/WEB-INF/templates/template.xhtml">
 
     <ui:define name="title">
-        Cadastro Default
+        Cadastro
     </ui:define>
 
     <ui:define name="body">
+    
         <f:metadata>
         </f:metadata>
 
-        <adm:breadcrumb title="Cadastro Default" link="cadastro-default.xhtml?id="/>
+        <adm:breadcrumb title="Cadastro" link="cadastro-default.xhtml?id="/>
         <h:form id="form" prependId="false">
+            
             <p:focus/>
 
 			
             <div class="box box-primary">
+            
                 <div class="box-header with-border">
                     <div id="main-buttons" class="hidden-sm hidden-xs">
                         <p:commandButton value="Salvar" update="@form"

@@ -5,6 +5,7 @@
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:adm="http://github.com/adminfaces"
                 template="/WEB-INF/templates/template.xhtml">
+                
 
     <ui:define name="head-end">
         <style type="text/css">
@@ -26,25 +27,31 @@
     </ui:define>
 
     <ui:define name="title">
-        Pesquisa Default
+        Adicionar cliente
     </ui:define>
 
     <ui:define name="description">
-        Pesquise ... 
+        adicionando usuário
     </ui:define>
 
+
     <ui:define name="body">
-        <adm:breadcrumb title="Pesquisa Default"/>
+    
+        <adm:breadcrumb title="Pesquisa"/>
 
 			<h:form>
             	<div class="box box-primary">
+                	
                 	<div class="box-header with-border">
+                    	
                     	<p:commandButton action="cadastro-default?faces-redirect=true" ajax="false" icon="fa fa-plus"
                          	            value="Novo" styleClass="btn-primary"/>
                     	<p:spacer width="5"/>
+	                    
 	                    <p:commandButton value="Excluir Selecionado(s)" icon="fa fa-trash" styleClass="btn-danger"
 	                                     process="@form" update="@form"/>
 	                    <p:spacer width="5"/>
+	                    
 	                    <p:commandButton value="Olhar Selecionado(s)" 
 	                    				 oncomplete="PF('defaultSelecionadas').show()"
 	                    				 update="@(.ui-dialog)" 
@@ -74,14 +81,24 @@
 	            </div>
         	</h:form>
         	
+        	
+        	
         	<p:dialog header="Default Selecionadas" widgetVar="defaultSelecionadas" height="250"
                   	  width="400" responsive="true" styleClass="box-success">
+                  	  
 	            <p:dataList id="listaDefaultSelecionadas" value="" var="default"
 	                        type="definition">
 
 	            </p:dataList>
+	            
 			</p:dialog>
 
+
+
+
+
+
+ <!-- FIM DA 'TAG' -->
         
     </ui:define>
 
