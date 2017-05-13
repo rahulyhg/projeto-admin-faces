@@ -1,2 +1,2 @@
 # template-admin-faces
-Template que será utilizado no curso
+Template utilizado no desenvolvimento do sistema
